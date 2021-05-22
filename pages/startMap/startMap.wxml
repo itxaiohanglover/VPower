@@ -1,0 +1,15 @@
+<!--pages/startMap/startMap.wxml-->
+<map style="width:100%; height:700rpx;" longitude="{{longitude}}" latitude="{{latitude}}" scale="17"
+  markers="{{markers}}"  bindmarkertap="navRoad" data-marker="{{markers[0]}}"
+  show-location />
+<view class="phone" bindtap="Call">
+  <!-- 地点：西操场篮球场 -->
+  地点：{{place}}
+</view>
+<view>
+  剩余可用篮球架：{{number}}个
+</view>
+<view class="phone" bindtap="Call">
+  <text>电话：{{teleNumber}}(可点击拨打)</text>
+</view>
+<button type="primary">报错</button>

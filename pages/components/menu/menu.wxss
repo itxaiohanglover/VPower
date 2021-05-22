@@ -1,0 +1,32 @@
+/* components/menu/menu.wxss */
+
+
+
+.menu_box{
+  position: fixed;
+  bottom: 100rpx;
+  right: 30rpx;
+  /* background-color: red; */
+  text-align: center;
+}
+.menu_main{
+top: 10rpx;
+width: 100rpx;
+height: auto;
+background-color: rgb(255, 255, 255);
+border-radius: 50%;
+border: 3rpx solid rgb(214, 214, 214);
+}
+.menu_img{
+margin-top: 10rpx;
+width: 50rpx;
+height: 50rpx;
+/* background-color: red; */
+}
+.menu_title{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 30rpx;
+
+}

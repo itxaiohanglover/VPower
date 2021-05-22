@@ -1,0 +1,24 @@
+/* pages/index/index.wxss */
+.start{
+    margin: 100rpx;
+    height: 300rpx;
+    width: 300rpx;
+    background: #673bb7;
+    border-radius: 50%;
+
+    color: white;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.container{
+    height: 100%;
+}

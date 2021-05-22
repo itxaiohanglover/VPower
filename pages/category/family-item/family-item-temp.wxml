@@ -1,0 +1,6 @@
+<template name="familyItem">
+  <view class="family">
+      <image src="{{familyImg}}"></image>
+      <text>{{familyName}}</text>
+    </view>
+</template>

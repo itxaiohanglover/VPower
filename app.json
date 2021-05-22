@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/apply/apply",
+    "pages/clock/clock",
+    "pages/startMap/startMap",
+    "pages/category/category",
+    "pages/my/my"
+  ],
+  "window":{
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "元动力",
+    "navigationBarTextStyle": "black"
+},
+"tabBar": {
+  "color": "#7F8389",
+  "selectedColor": "#FF6200",
+  "backgroundColor": "#fff",
+  "borderStyle": "black",
+  "list": [
+    {
+      "pagePath": "pages/index/index",
+      "iconPath": "images/tabBar/home.png",
+      "selectedIconPath": "images/tabBar/home@select.png",
+      "text": "首页"
+    },
+    {
+      "pagePath": "pages/category/category",
+      "iconPath": "images/tabBar/category.png",
+      "selectedIconPath": "images/tabBar/category@select.png",
+      "text": "社区"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "iconPath": "images/tabBar/my.png",
+      "selectedIconPath": "images/tabBar/my@select.png",
+      "text": "个人中心"
+    }
+  ]
+},
+"permission": {
+  "scope.userLocation": {
+    "desc": "导航需要" 
+  }
+},
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

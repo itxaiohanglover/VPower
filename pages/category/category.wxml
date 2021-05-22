@@ -1,0 +1,46 @@
+<import src="family-item/family-item-temp.wxml"/>
+<view>
+  <swiper indicator-dots="true" autoplay="true" interval="5000">
+    <swiper-item><image src="../../images/family/banner_1.jpg"></image></swiper-item>
+    <swiper-item><image src="../../images/family/banner_2.jpg"></image></swiper-item>
+  </swiper>
+  <view class="tt">
+    <text>--- 元社区 ---</text>
+  </view>
+  <block wx:for="{{familyKey}}" wx:for-item="item">
+    <view catchtap="toGenus" data-family-id="{{item.familyId}}">
+      <template is="familyItem" data="{{...item}}"></template>
+    </view>
+  </block>
+
+
+  
+<!-- 渲染post -->
+  <view>
+<block wx:for="{{posts_key}}" wx:for-item="item">
+ <view class='posts-container'>
+    <view class='posts-author_date'>
+      <image src='{{item.img}}' class='user_authr'></image>
+      <text class='date'>{{item.date}}</text>
+    </view>
+    <image src='{{item.content_img}}' class='posts_detail_img'></image>
+    <text class='posts_title'>{{item.content}}</text>
+  <view class='posts-bottom-like'>
+    <!-- <image src='{{item.chat_icon}}' class='posts-like'></image> -->
+    <image src='/images/like/like.png' class='posts-like' bindtap="like"></image>
+    <text class='like-text'>{{item.collect}}</text>
+      <!-- <image src='{{item.reply_icon}}' class='reply-like'></image> -->
+      <image src='/images/like/favour.png' class='reply-like'></image>
+    <text class='reply-text'>{{vitem.replyCount}}</text>
+  </view>
+ </view>
+</block>
+</view>
+
+</view>
+
+
+
+<!-- 悬浮按钮 -->
+<menu bindmenuItemClick="menuItemClick" mainmodel="{{mainmodel}}" menulist ="{{menulist}}"></menu>
+

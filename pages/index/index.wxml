@@ -1,0 +1,11 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view class="top">
+  <view bindtap="startClock" class="start">运动计时</view>
+</view>
+<view class="top">
+  <view bindtap="startMap" class="start">匹配</view>
+</view>
+</view>
+
+

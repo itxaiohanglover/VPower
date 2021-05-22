@@ -1,0 +1,47 @@
+<!--用户授权了，就显示头像和昵称-->
+<view class="header" wx:if="{{isShowUserName}}" bindtap='change'>
+	<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <button bindtap="loginOut" type="primary">退出登陆</button>
+</view>
+<!--如果用户没有授权，显示登陆按钮  -->
+<view wx:if="{{!isShowUserName}}" class="btn-login">
+	<button type="primary" bindtap="getUserProfile">授权登陆</button>
+</view>
+
+    <view class="list-item">
+    <!-- <image class="item-image" src="../../images/icon/footer-icon-01.png"></image> -->
+    <text class="item-text">昵称：{{name}}</text>
+    <image class="image-jiantou" src="../../images/icon/icon-arrowdown.png"></image>
+    </view>
+    <view class="line"></view>
+<!-- 
+    <view class="list-item"> -->
+    <!-- <image class="item-image" src="../../images/icon/footer-icon-01.png"></image> -->
+    <!-- <text class="item-text">性别：{{sex}}</text>
+    <image class="image-jiantou" src="../../images/icon/icon-arrowdown.png"></image>
+    </view>
+    <view class="line"></view> -->
+
+
+    <!-- 列表1 -->
+    <view class="list-item">
+    <image class="item-image" src="../../images/icon/footer-icon-01.png"></image>
+    <text class="item-text">金币：{{money}}$</text>
+    <image class="image-jiantou" src="../../images/icon/icon-arrowdown.png"></image>
+    </view>
+    <view class="line"></view>
+    
+
+    <!-- 列表2 -->
+	<!-- <view class="list-item">
+    <image class="item-image" src="../../images/icon/iconfont-kefu.png"></image>
+    <text class="item-text" >联系客服</text>
+    <image class="image-jiantou" src="../../images/icon/icon-arrowdown.png" open-type="contact"></image>
+    </view>
+    <view class="line"></view> -->
+
+
+
+    <button style="background:#ffffff;text-align:left;" open-type="contact">联系客服</button>
+

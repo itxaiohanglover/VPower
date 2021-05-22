@@ -1,0 +1,13 @@
+/* pages/apply/apply.wxss */
+.content{
+  border:  red  3rpx solid;
+}
+
+.button{
+  border-radius: 50%;
+
+}
+.in{
+  /* margin-bottom: 10rpx; */
+  padding: 20rpx;
+}

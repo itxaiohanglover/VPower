@@ -1,0 +1,17 @@
+<view>
+  <view>当前日期：{{time}}</view>
+  <view class="in">
+    <button wx:if="{{!isShowImg}}"     type="primary" bindtap ="upLoad">上传图片</button>
+    <image wx:else   src="{{yun}}"></image>
+  </view>
+  <view>
+    <input placeholder="请输入内容" type="text" class="content" bindinput="input"></input>
+  </view>
+  <view>
+    <view class="in">
+    <button type="primary" bindtap="submit">提交</button> 
+    </view>
+  </view>
+</view>
+
+
